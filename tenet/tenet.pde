@@ -204,7 +204,7 @@ void setup() {
   strokeCap(SQUARE);
 
   events.add(new Event(X001, IS_Y, COMMENT_Y3, "IS gets away\nfrom Freeport", LEFT, COMMENT_Y3 + 10, new int[]{IS_Y}));
-  events.add(new Event(X001, IP_Y, IN_Y, "ITP will be put into\ninverted cargo container\nwith IN and IK\non its way to Oslo", LEFT, COMMENT_Y4, new int[]{IP_Y, II_Y, IK_Y, IN_Y}));
+  events.add(new Event(X001, IP_Y, IN_Y, "ITP will be put into\ncargo container\nwith IN and IK\non its way to Oslo", LEFT, COMMENT_Y4, new int[]{IP_Y, II_Y, IK_Y, IN_Y}));
   events.add(new Event(X002, K_Y, COMMENT_Y2 + 30, "S and K\nget to\nFreeport", RIGHT, COMMENT_Y2, new int[]{K_Y, S_Y}));
   events.add(new Event(X003, P_Y, COMMENT_Y1, "N and TP\nsee convoy,\nfollow it", RIGHT, COMMENT_Y1 + 10, new int[]{N_Y, P_Y}));
   events.add(new Event(X004, K_Y, COMMENT_Y2 + 45, "S and K\nargue,\nS hides\nin chamber", RIGHT, COMMENT_Y2, new int[]{K_Y, S_Y}));  
@@ -214,7 +214,7 @@ void setup() {
   events.add(new Event(X010, K_Y, MIDDLE_Y, "K is put\nin IAudi\nwith IS", RIGHT, COMMENT_Y2, new int[]{K_Y}));
   events.add(new Event(X010, IS_Y, MIDDLE_Y, "IS and K\nget to\nFreeport", LEFT, COMMENT_Y3 + 10, new int[]{IS_Y}));
   events.add(new Event(X011, MIDDLE_Y, COMMENT_Y1, "N and TP hear\n'not Estonian'", RIGHT, COMMENT_Y1 + 10, new int[]{N_Y, P_Y}));
-  events.add(new Event(X011, IS_Y, MIDDLE_Y, "IS tells hiS-men\nto get AlgPiece\nfrom ISaab\nin Freeport", LEFT, COMMENT_Y3 + 10, new int[]{IS_Y}));
+  events.add(new Event(X011, IS_Y, MIDDLE_Y, "IS tells S-men\nto get AlgPiece\nfrom ISaab\nin Freeport", LEFT, COMMENT_Y3 + 10, new int[]{IS_Y}));
   events.add(new Event(X012, IS_Y, COMMENT_Y3, "IS returns\nto IAudi,\nIS and K\ndrive away", LEFT, COMMENT_Y3 + 10, new int[]{IS_Y}));
   events.add(new Event(X013, IS_Y, COMMENT_Y4 + 15, "IS talks to ITP,\nblows up ISaab", LEFT, COMMENT_Y4, new int[]{IS_Y, IP_Y}));
   events.add(new Event(X014, IS_Y, COMMENT_Y3, "IS and K\nstop near\ncrashed\nISaab", LEFT, COMMENT_Y3 + 10, new int[]{IS_Y}));
@@ -343,7 +343,7 @@ void setup() {
   }
 
 
-  String versionStr = "v2.0";
+  String versionStr = "v2.1";
 
   fill(0);
   textAlign(RIGHT);
@@ -648,7 +648,7 @@ void drawCargoContainer() {
   endShape();
   fill(0, 128);
   textAlign(LEFT);
-  text("inverted cargo container", L_BEGIN_X + W, IN_Y + 3 * W + 2);
+  text("cargo container", L_BEGIN_X + W, IN_Y + 3 * W + 2);
   textAlign(RIGHT);
-  text("inverted cargo container", L_BEGIN_X + X105 - W - 4, IN_Y + 3 * W + 2);
+  text("cargo container", L_BEGIN_X + X105 - W - 4, IN_Y + 3 * W + 2);
 }
